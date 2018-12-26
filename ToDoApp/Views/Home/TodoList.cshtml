@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "TodoList";
+}
+
+<h2>Bevásárlólista</h2>
+@*Megjegyzés ez itt*@
+
+
+
+
+<ol>
+
+    @foreach (var l in ViewBag.lista)
+    {
+        <li>@l</li>
+    }
+
+
+</ol>

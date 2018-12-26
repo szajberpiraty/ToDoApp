@@ -26,5 +26,14 @@ namespace ToDoApp.Controllers
 
             return View();
         }
+
+        public ActionResult TodoList()
+        {
+            var lista = new List<string>() {"Só","Cukor","spagetti" };
+
+            ViewBag.lista = lista;
+
+            return View();
+        }
     }
 }
