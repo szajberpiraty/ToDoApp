@@ -31,9 +31,9 @@ namespace ToDoApp.Controllers
         {
             var lista = new List<string>() {"Só","Cukor","spagetti" };
 
-            ViewBag.lista = lista;
+            //ViewBag.lista = lista;
 
-            return View();
+            return View(lista);
         }
     }
 }
