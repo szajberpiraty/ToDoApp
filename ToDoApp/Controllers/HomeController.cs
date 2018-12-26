@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ToDoApp.Models;
 
 namespace ToDoApp.Controllers
 {
@@ -29,7 +30,13 @@ namespace ToDoApp.Controllers
 
         public ActionResult TodoList()
         {
-            var lista = new List<string>() {"Só","Cukor","spagetti" };
+            var lista = new List<TodoItem>();
+
+            lista.Add(new TodoItem() { Name = "Só", Done = true });
+            lista.Add(new TodoItem() { Name = "Cukor", Done = true });
+            lista.Add(new TodoItem() { Name = "Spagetti", Done = true });
+            lista.Add(new TodoItem() { Name = "Marhahús", Done = false });
+            lista.Add(new TodoItem() { Name = "Paradicsom", Done = false });
 
             //ViewBag.lista = lista;
 

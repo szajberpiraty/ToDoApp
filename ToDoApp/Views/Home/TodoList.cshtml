@@ -1,5 +1,5 @@
 ﻿//Modellt definiálunk, így már tud listát fogadni
-@model List<string>
+@model List<ToDoApp.Models.TodoItem>
 @{
     ViewBag.Title = "TodoList";
 }
@@ -12,9 +12,18 @@
 
 <ol>
 
-    @foreach (var l in Model)
+    @foreach (var todoItem in Model)
     {
-        <li>@l</li>
+        if (todoItem.Done)
+        {
+            <li><strike>@todoItem.Name</strike></li>
+        }
+        else
+        {
+            <li>@todoItem.Name</li>
+        }
+
+
     }
 
 
