@@ -3,3 +3,4 @@ Folytatás a bevezetés és template kialakítása 5 videótól.
 Folytatás a **HTTP kérés, adatmodellek, adatbevitel 1** videótól.
 Folytatás a HTTP kérés, adatmodellek, adatbevitel 3 videótól.
 Folytatás a HTTP kérés, adatmodellek, adatbevitel 4 videótól.
+Folytatás a HTTP kérés, adatmodellek, adatbevitel 6 videótól.

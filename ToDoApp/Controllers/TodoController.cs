@@ -21,6 +21,14 @@ namespace ToDoApp.Controllers
             return View(MyDb.Lista);
         }
 
+        [HttpGet] //annotáció, ez csak POST kéréseket szolgál ki
+        public ActionResult Create()
+        {
+
+            return View();
+        }
+
+        [HttpPost] //ez pedig csak GET-kéréseket kezel
         public ActionResult Create(string Name)
         {
 
