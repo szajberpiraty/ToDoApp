@@ -5,4 +5,4 @@ Folytatás a HTTP kérés, adatmodellek, adatbevitel 3 videótól.
 Folytatás a HTTP kérés, adatmodellek, adatbevitel 4 videótól.
 Folytatás a HTTP kérés, adatmodellek, adatbevitel 6 videótól.
 Folytatás a ASP.NET MVC, bűvészkedés adatokkal 3 videótól.
-
+Folytatás a ASP.NET MVC, bűvészkedés adatokkal 4 videótól.
