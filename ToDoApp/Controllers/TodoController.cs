@@ -21,20 +21,21 @@ namespace ToDoApp.Controllers
             return View(MyDb.Lista);
         }
 
-        [HttpGet] //annotáció, ez csak POST kéréseket szolgál ki
+        [HttpGet] //annotáció, ez csak GET kéréseket szolgál ki
         public ActionResult Create()
         {
 
             return View();
         }
 
-        [HttpPost] //ez pedig csak GET-kéréseket kezel
-        public ActionResult Create(string Name)
+        [HttpPost] //ez pedig csak POST-kéréseket kezel
+        //Ha az isDone alapból false, akkor nem kell a formban hidden mező
+        public ActionResult Create(string name,bool isDone)
         {
 
-            if (!string.IsNullOrEmpty(Name))
+            if (!string.IsNullOrEmpty(name))
             {
-                MyDb.Lista.Add(new TodoItem() { Name = Name, Done = true });
+                MyDb.Lista.Add(new TodoItem() { Name = name, Done = isDone });
                 return RedirectToAction("Index");
             }
 

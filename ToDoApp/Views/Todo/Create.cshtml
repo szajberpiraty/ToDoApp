@@ -8,9 +8,11 @@
 
 <form method="post">
     <input name="Name"/>
+    @*<input name="isDone" type="checkbox" value="true" />*@
+    @Html.CheckBox("isDone")
     <input type="submit" value="Mentés"/>
 
 
 
 </form>
-
+@Html.ActionLink("Mégsem","Index")
