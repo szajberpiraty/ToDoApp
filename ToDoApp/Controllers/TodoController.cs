@@ -42,5 +42,26 @@ namespace ToDoApp.Controllers
 
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            //MyDb.Lista.Where(x=>x.Id==id);
+
+            //Csak akkor jó, ha pontosan egy ilyen elem van!
+            var item = MyDb.Lista.Single(x=>x.Id==id);
+
+            //Ha ez nem garantálható, akkor
+            //var item = MyDb.Lista.SingleOrDefault(x => x.Id == id);
+
+            return View(item);
+        }
+
+        [HttpPut]
+        public ActionResult Edit(string name, bool isDone)
+        {
+
+            return View();
+        }
     }
 }
