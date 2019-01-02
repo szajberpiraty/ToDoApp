@@ -7,7 +7,7 @@
 <h2>Bevásárlólista</h2>
 @*Megjegyzés ez itt*@
 
-
+@Html.ActionLink("Új felvétele", "Create")
 
 
 <ol>
@@ -16,11 +16,11 @@
     {
         if (todoItem.Done)
         {
-            <li><strike>@todoItem.Name</strike></li>
+            <li><strike>@Html.ActionLink(todoItem.Name,"Details",new {Id=todoItem.Id })</strike>@Html.ActionLink("Módosítás","Edit", new { Id = todoItem.Id })@Html.ActionLink("Törlés", "Delete", new { Id = todoItem.Id })</li>
         }
         else
         {
-            <li>@todoItem.Name</li>
+            <li>@Html.ActionLink(todoItem.Name, "Details", new { Id = todoItem.Id })@Html.ActionLink("Módosítás", "Edit", new { Id = todoItem.Id })@Html.ActionLink("Törlés", "Delete", new { Id = todoItem.Id })</li>
         }
 
 
@@ -29,4 +29,11 @@
 
 </ol>
 
-@Html.ActionLink("Új felvétele", "Create")
+@using (Html.BeginForm("Create", "Todo"))
+{
+    @Html.TextBox("Name")
+    @Html.CheckBox("isDone")
+    <button>Mentés</button>
+    
+}
+
