@@ -93,7 +93,7 @@ namespace ToDoApp.Controllers
 
         public ActionResult Details(int id)
         {
-            var item = MyDb.Lista.Single(x => x.Id == id);
+            var item = db.TodoItems.Single(x => x.Id == id);
 
             return View(item);
         }

@@ -9,4 +9,7 @@ Folytatás a ASP.NET MVC, bűvészkedés adatokkal 4 videótól.
 Folytatás a ASP.NET MVC, bűvészkedés adatokkal 6 videótól.
 Folytatás a ASP.NET MVC, bűvészkedés adatokkal 8 videótól.
 Folytatás a Teljes kontroller megjelenítés 1 videótól
+Folytatás a Teljes kontroller megjelenítés 2 videótól
+
+
 
